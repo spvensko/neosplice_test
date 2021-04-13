@@ -11,6 +11,6 @@ RUN yum -y install bzip2
 RUN yum install -y zlib-devel
 RUN yum -y install perl-Env
 RUN yum -y install ncurses-devel
-RUN yum -y install python27-devel
+RUN yum -y install python-devel
 RUN yum -y install epel-release && yum clean all
 RUN yum -y install python-pip && yum clean all
