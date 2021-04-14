@@ -15,14 +15,14 @@ RUN yum -y install python-devel
 RUN yum -y install epel-release && yum clean all
 RUN yum -y install python-pip && yum clean all
 
-
-RUN pip2.7 install --upgrade setuptools
-RUN pip2.7 install numpy==1.16.0
-RUN pip2.7 install networkx==1.11
-RUN pip2.7 install pyahocorasick==1.4.0
-RUN pip2.7 install	bcbio-gff==0.6.4
-RUN pip2.7 install biopython==1.70
-RUN pip2.7 install pyfaidx==0.5.3.1
-RUN pip2.7 install pysam==0.14.1
-RUN pip2.7 install pandas==0.23.4
-RUN pip2.7 install scipy==1.2.0
+RUN pip install --upgrade pip
+RUN pip install --upgrade setuptools
+RUN pip install numpy==1.16.0
+RUN pip install networkx==1.11
+RUN pip install pyahocorasick==1.4.0
+RUN pip install	bcbio-gff==0.6.4
+RUN pip install biopython==1.70
+RUN pip install pyfaidx==0.5.3.1
+RUN pip install pysam==0.14.1
+RUN pip install pandas==0.23.4
+RUN pip install scipy==1.2.0
