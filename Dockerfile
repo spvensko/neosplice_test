@@ -16,7 +16,6 @@ RUN yum -y install epel-release && yum clean all
 RUN yum -y install python-pip && yum clean all
 
 RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
 RUN pip install numpy==1.16.0
 RUN pip install networkx==1.11
 RUN pip install pyahocorasick==1.4.0
