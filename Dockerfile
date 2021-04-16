@@ -3,7 +3,7 @@ LABEL MAINTAINER "shengjie@email.unc.edu"
 
 RUN apt-get update
 RUN apt-get install -y git
-RUN apt-get install -y gcc-c++ make
+RUN apt-get install -y build-essentials
 RUN apt-get install -y bzip2-devel
 RUN apt-get install -y xz-devel
 RUN apt-get install -y bzip2
