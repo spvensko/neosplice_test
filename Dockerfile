@@ -13,9 +13,9 @@ RUN yum -y install perl-Env
 RUN yum -y install ncurses-devel
 RUN yum -y install python-devel
 RUN yum -y install epel-release && yum clean all
-RUN yum -y install python2-pip-8.1.2-10.el7 && yum clean all
+RUN yum -y install python2-pip&& yum clean all
 
-RUN pip install --upgrade pip<21.0
+RUN pip install --upgrade setuptools --user python
 RUN pip install numpy==1.16.0
 RUN pip install networkx==1.11
 RUN pip install pyahocorasick==1.4.0
