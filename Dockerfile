@@ -12,7 +12,7 @@ RUN apt-get install -y ncurses-dev
 RUN apt-get install -y python-dev
 RUN apt-get install -y python-pip
 
-RUN pip --upgrade pip setuptools
+RUN pip install --upgrade pip setuptools
 RUN pip install numpy==1.16.0
 RUN pip install networkx==1.11
 RUN pip install pyahocorasick==1.4.0
