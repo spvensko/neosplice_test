@@ -1,16 +1,16 @@
 From ubuntu:xenial
 LABEL MAINTAINER "shengjie@email.unc.edu"
 
-RUN apt-get -y install git
-RUN apt-get -y install gcc-c++ make
-RUN apt-get -y install bzip2-devel
-RUN apt-get -y install xz-devel
-RUN apt-get -y install bzip2
-RUN apt-get -y install zlib-devel
-RUN apt-get -y install perl-Env
-RUN apt-get -y install ncurses-devel
-RUN apt-get -y install python-dev
-RUN apt-get -y install python-pip
+RUN apt-get install -y git
+RUN apt-get install -y gcc-c++ make
+RUN apt-get install -y bzip2-devel
+RUN apt-get install -y xz-devel
+RUN apt-get install -y bzip2
+RUN apt-get install -y zlib-devel
+RUN apt-get install -y perl-Env
+RUN apt-get install -y ncurses-devel
+RUN apt-get install -y python-dev
+RUN apt-get install -y python-pip
 
 RUN pip install numpy==1.16.0
 RUN pip install networkx==1.11
