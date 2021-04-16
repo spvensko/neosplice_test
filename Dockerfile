@@ -8,8 +8,7 @@ RUN apt-get install -y libbz2-dev
 RUN apt-get install -y xz-utils
 RUN apt-get install -y bzip2
 RUN apt-get install -y zlib1g-dev
-RUN apt-get install -y perl-Env
-RUN apt-get install -y ncurses-devel
+RUN apt-get install -y ncurses-dev
 RUN apt-get install -y python-dev
 RUN apt-get install -y python-pip
 
