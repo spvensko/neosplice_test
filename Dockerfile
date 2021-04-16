@@ -1,21 +1,19 @@
-From centos:7
+From ubuntu:xenial
 LABEL MAINTAINER "shengjie@email.unc.edu"
 
-RUN yum -y install wget 
-RUN yum -y install unzip
-RUN yum -y install git
-RUN yum install -y gcc-c++ make
-RUN yum -y install bzip2-devel
-RUN yum -y install xz-devel
-RUN yum -y install bzip2
-RUN yum install -y zlib-devel
-RUN yum -y install perl-Env
-RUN yum -y install ncurses-devel
-RUN yum -y install python-devel
-RUN yum -y install epel-release && yum clean all
-RUN yum -y install python2-pip&& yum clean all
+RUN apt-get -y install wget 
+RUN apt-get -y install unzip
+RUN apt-get -y install git
+RUN apt-get -y install gcc-c++ make
+RUN apt-get -y install bzip2-devel
+RUN apt-get -y install xz-devel
+RUN apt-get -y install bzip2
+RUN apt-get -y install zlib-devel
+RUN apt-get -y install perl-Env
+RUN apt-get -y install ncurses-devel
+RUN apt-get -y install python-dev
+RUN apt-get -y install python-pip
 
-RUN pip install --upgrade setuptools --user python
 RUN pip install numpy==1.16.0
 RUN pip install networkx==1.11
 RUN pip install pyahocorasick==1.4.0
