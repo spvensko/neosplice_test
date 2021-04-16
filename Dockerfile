@@ -1,7 +1,6 @@
 From ubuntu:xenial
 LABEL MAINTAINER "shengjie@email.unc.edu"
 
-RUN apt-get -y install wget 
 RUN apt-get -y install unzip
 RUN apt-get -y install git
 RUN apt-get -y install gcc-c++ make
