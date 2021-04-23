@@ -13,7 +13,7 @@ RUN apt-get install -y python3
 RUN apt-get install -y python3-dev
 RUN apt-get install -y python3-pip
 
-RUN pip3 install --upgrade pip3
+RUN pip3 install --upgrade pip
 RUN pip3 install numpy==1.16.0
 RUN pip3 install networkx==1.11
 RUN pip3 install pyahocorasick==1.4.0
