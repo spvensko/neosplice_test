@@ -13,11 +13,16 @@ RUN apt-get install -y python3
 RUN apt-get install -y python3-dev
 RUN apt-get install -y python3-pip
 
+RUN which python
+RUN which python3
+RUN which pip
+RUN which pip3
+
 RUN pip3 install --upgrade pip
 RUN pip3 install numpy==1.16.0
 RUN pip3 install networkx==1.11
 RUN pip3 install pyahocorasick==1.4.0
-RUN pip3 install	bcbio-gff==0.6.4
+RUN pip3 install bcbio-gff==0.6.4
 RUN pip3 install biopython==1.70
 RUN pip3 install pyfaidx==0.5.3.1
 RUN pip3 install pysam==0.14.1
