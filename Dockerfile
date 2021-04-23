@@ -13,11 +13,6 @@ RUN apt-get install -y python3
 RUN apt-get install -y python3-dev
 RUN apt-get install -y python3-pip
 
-RUN which python
-RUN which python3
-RUN which pip
-RUN which pip3
-
 RUN pip3 install --upgrade pip
 RUN pip3 install numpy==1.16.0
 RUN pip3 install networkx==1.11
