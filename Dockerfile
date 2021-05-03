@@ -7,6 +7,7 @@ RUN apt-get install -y wget
 RUN apt-get install -y build-essential
 RUN apt-get install -y libbz2-dev
 RUN apt-get install -y xz-utils
+RUN apt-get install -y liblzma-dev
 RUN apt-get install -y bzip2
 RUN apt-get install -y zlib1g-dev
 RUN apt-get install -y ncurses-dev
