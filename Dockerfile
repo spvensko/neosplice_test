@@ -55,3 +55,5 @@ ENV PATH /samtools-1.7/:${PATH}
 RUN chmod -R ugo+rx /netMHCpan-4.0-docker/
 RUN chmod -R ugo+rx /netMHCIIpan-3.2-docker/
 
+COPY NeoSplice /NeoSplice
+RUN chmod -R ugo+rx /NeoSplice/
