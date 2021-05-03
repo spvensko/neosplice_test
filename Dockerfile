@@ -3,6 +3,7 @@ LABEL MAINTAINER "shengjie@email.unc.edu"
 
 RUN apt-get update
 RUN apt-get install -y git
+RUN apt-get install -y wget
 RUN apt-get install -y build-essential
 RUN apt-get install -y libbz2-dev
 RUN apt-get install -y xz-utils
@@ -11,7 +12,7 @@ RUN apt-get install -y zlib1g-dev
 RUN apt-get install -y ncurses-dev
 RUN apt-get install -y python2.7
 RUN apt-get install -y python2.7-dev
-RUN apt-get install -y python3-pip
+
 
 RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 RUN python2.7 get-pip.py
