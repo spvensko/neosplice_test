@@ -30,7 +30,7 @@ RUN pip install scipy==1.2.0
 RUN wget https://github.com/holtjma/msbwt/archive/0.3.0.tar.gz \
     && tar -xzvf 0.3.0.tar.gz \
     && cd msbwt-0.3.0 \
-    && python setup.py install \
+    && python2.7 setup.py install \
     && cd /
 
 RUN git clone https://github.com/holtjma/msbwt-is.git \
