@@ -57,3 +57,5 @@ RUN chmod -R ugo+rx /netMHCIIpan-3.2-docker/
 
 COPY NeoSplice /NeoSplice
 RUN chmod -R ugo+rx /NeoSplice/
+
+RUN ln -s /usr/bin/python2.7 /usr/bin/python
