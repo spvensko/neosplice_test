@@ -3,6 +3,7 @@ LABEL MAINTAINER "shengjie@email.unc.edu"
 
 RUN apt-get update
 RUN apt-get install -y git
+RUN apt-get install -y gawk
 RUN apt-get install -y wget
 RUN apt-get install -y build-essential
 RUN apt-get install -y libbz2-dev
